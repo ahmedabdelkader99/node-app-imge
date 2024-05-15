@@ -34,7 +34,7 @@ const client = new Client({connectionString:uri})
 //// routes
 //caching data from db using redis (set , get)
 app.get("/", function (req, res) {
-  client.set("products", "products - value");
+  rClient.set("products", "products - value");
   res.send("Hello ahmed Abdelkader dev ");
 });
 
